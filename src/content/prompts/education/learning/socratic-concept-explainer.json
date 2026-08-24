@@ -1,0 +1,58 @@
+{
+  "id": "socratic-concept-explainer",
+  "type": "prompt",
+  "slug": "socratic-concept-explainer",
+  "title": "Socratic Concept Explainer",
+  "description": "Demystify difficult high school concepts using simple explanations, everyday analogies, active recall, and exam-focused practice.",
+  "taxonomy": {
+    "category": "education",
+    "subcategory": "learning"
+  },
+  "tags": [
+    "education",
+    "learning",
+    "high-school",
+    "feynman-technique",
+    "concept-explanation",
+    "active-recall"
+  ],
+  "difficulty": "beginner",
+  "featured": true,
+  "useCase": "Understand difficult academic concepts by breaking them into simple explanations, relatable analogies, common misconceptions, and a practice question.",
+  "prompt": "Act as a warm, world-class high school tutor. Explain the concept of {{topic}} to a {{studentLevel}} student.\n\nTeach it as if your goal is not simply to give me the answer, but to help me genuinely understand and remember it.\n\n1. Start with a simple, relatable real-world analogy.\n2. Give me a short intuitive explanation before introducing technical terminology.\n3. Break the concept down into 3–5 simple sequential steps.\n4. Explain the important technical terms in plain language while keeping the explanation scientifically or academically accurate.\n5. Explain why the concept matters and, where appropriate, how it connects to something I may already know.\n6. List 3 common misconceptions or mistakes students make about this topic.\n7. Give me 1 practice multiple-choice question to test my understanding.\n8. Clearly explain why the correct answer is correct and why the other options are incorrect.\n9. Finish with a short 'Teach It Back' challenge asking me to explain the concept in my own words.\n\nUse clear headings, short paragraphs, and examples where useful.\n\nDo not overwhelm me with unnecessary information. Keep the explanation appropriate for my academic level while preserving important accuracy.\n\nRespond entirely in {{language}}.",
+  "variables": [
+    {
+      "name": "topic",
+      "description": "The concept the student wants to understand.",
+      "example": "Mitochondria & ATP Synthesis",
+      "placeholder": "e.g. Mitochondria & ATP Synthesis",
+      "required": true
+    },
+    {
+      "name": "studentLevel",
+      "description": "The student's grade, course, or academic level.",
+      "example": "Grade 10",
+      "placeholder": "e.g. Grade 10",
+      "required": true
+    },
+    {
+      "name": "language",
+      "description": "The language in which the AI should provide the complete explanation.",
+      "example": "English",
+      "placeholder": "e.g. English, Assamese, Hindi",
+      "defaultValue": "English",
+      "required": true
+    }
+  ],
+  "exampleInput": "Topic: Mitochondria & ATP Synthesis\nStudent level: Grade 10\nLanguage: English",
+  "exampleOutput": "Think of a cell as a busy city. The mitochondria are like the city's power stations, producing usable energy that keeps everything running.\n\nStep 1 — Fuel enters the system...\n\nStep 2 — Energy is transferred...\n\nStep 3 — ATP becomes the usable energy currency...\n\nCommon misconception: Mitochondria do not simply 'create energy from nothing'...",
+  "languageInstruction": "Respond entirely in the language selected by the learner. Keep scientific and academic terminology accurate, but explain difficult terms in that language whenever possible.",
+  "tips": [
+    "Use a specific concept rather than an entire subject.",
+    "Tell the AI your actual grade or academic level so it can adjust the explanation.",
+    "Try the practice question before reading the explanation.",
+    "Use the Teach It Back challenge to check whether you genuinely understand the concept.",
+    "If something is still confusing, ask the AI to explain only that part using a different analogy.",
+    "Change the language variable if you prefer to learn in another language."
+  ]
+}

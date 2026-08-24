@@ -1,0 +1,18 @@
+{
+  "navigation": {
+    "prompts": "Prompts",
+    "skills": "Skills",
+    "workflows": "Workflows",
+    "agents": "Agents",
+    "learn": "Learn",
+    "search": "Search"
+  },
+  "home": {
+    "eyebrow": "AI Prompts • Skills • Workflows",
+    "title": "Learn AI. Build better.",
+    "description": "A bilingual library of practical AI prompts, skills, and workflows designed to help you learn, build, automate, and work smarter.",
+    "explorePrompts": "Explore Prompts",
+    "exploreSkills": "Explore Skills",
+    "exploreWorkflows": "Explore Workflows"
+  }
+}

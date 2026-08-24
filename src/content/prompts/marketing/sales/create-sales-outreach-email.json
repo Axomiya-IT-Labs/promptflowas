@@ -1,0 +1,89 @@
+{
+  "id": "prompt-marketing-sales-create-sales-outreach-email",
+  "type": "prompt",
+  "slug": "create-sales-outreach-email",
+  "title": "Create a Personalized Sales Outreach Email",
+  "description": "Create a concise, personalized sales outreach email based on a prospect's role, company, situation, and likely business needs.",
+  "taxonomy": {
+    "category": "marketing",
+    "subcategory": "sales"
+  },
+  "tags": [
+    "sales",
+    "outreach",
+    "email",
+    "lead-generation",
+    "personalization"
+  ],
+  "difficulty": "beginner",
+  "featured": true,
+  "useCase": "Use this prompt when you need to turn basic prospect information into a relevant first-touch sales email without relying on generic copy.",
+  "prompt": "You are an experienced B2B sales copywriter.\n\nCreate a concise, personalized sales outreach email for the following prospect.\n\nProspect name: {{prospectName}}\nProspect role: {{prospectRole}}\nCompany: {{companyName}}\nCompany context: {{companyContext}}\nPotential problem or need: {{potentialNeed}}\nMy product or service: {{myOffer}}\nKey benefit: {{keyBenefit}}\nDesired call to action: {{callToAction}}\n\nRequirements:\n- Keep the email concise and natural.\n- Make the opening relevant to the prospect rather than generic.\n- Focus on the prospect's likely problem or opportunity.\n- Clearly communicate one relevant benefit.\n- Avoid exaggerated claims, unnecessary jargon, and aggressive sales language.\n- Do not invent facts about the prospect or company.\n- Keep the call to action simple.\n- Write a clear subject line and the email body.\n\nReturn:\n1. Subject line\n2. Email body\n3. A short explanation of why the personalization works",
+  "variables": [
+    {
+      "name": "prospectName",
+      "description": "The name of the person receiving the email.",
+      "example": "Sarah",
+      "placeholder": "Prospect name",
+      "required": true
+    },
+    {
+      "name": "prospectRole",
+      "description": "The prospect's job title or role.",
+      "example": "Head of Marketing",
+      "placeholder": "Prospect role",
+      "required": true
+    },
+    {
+      "name": "companyName",
+      "description": "The prospect's company name.",
+      "example": "Acme Technologies",
+      "placeholder": "Company name",
+      "required": true
+    },
+    {
+      "name": "companyContext",
+      "description": "Relevant information about the company that can be safely used for personalization.",
+      "example": "The company recently expanded into three new markets.",
+      "placeholder": "Company context",
+      "required": true
+    },
+    {
+      "name": "potentialNeed",
+      "description": "The problem, challenge, or opportunity you believe may be relevant to the prospect.",
+      "example": "Maintaining consistent lead follow-up across multiple markets.",
+      "placeholder": "Potential need",
+      "required": true
+    },
+    {
+      "name": "myOffer",
+      "description": "The product or service being offered.",
+      "example": "An automated lead follow-up system.",
+      "placeholder": "Your product or service",
+      "required": true
+    },
+    {
+      "name": "keyBenefit",
+      "description": "The most relevant benefit the prospect could receive.",
+      "example": "More consistent follow-up without adding manual workload.",
+      "placeholder": "Key benefit",
+      "required": true
+    },
+    {
+      "name": "callToAction",
+      "description": "The desired next step for the prospect.",
+      "example": "A 15-minute conversation next week.",
+      "placeholder": "Call to action",
+      "required": true
+    }
+  ],
+  "tips": [
+    "Give the model real prospect context instead of generic descriptions.",
+    "Use only information you can verify about the prospect or company.",
+    "Keep the outreach focused on one problem and one relevant benefit.",
+    "Test different openings and calls to action rather than sending the same message to everyone."
+  ],
+  "relatedPromptIds": [],
+  "relatedSkillIds": [],
+  "relatedWorkflowIds": []
+}
